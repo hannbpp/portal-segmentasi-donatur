@@ -1,0 +1,41 @@
+# ============================================================
+# .gitignore — Portal Segmentasi Donatur Dompet Ummat
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# --- Virtual Environment ---
+venv/
+.venv/
+env/
+
+# --- Data Confidential (JANGAN di-push) ---
+*.csv
+*.xlsx
+*.xls
+*.sql
+*.db
+*.sqlite
+data/
+uploads/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Streamlit ---
+.streamlit/
+
+# --- Environment Variables ---
+.env
+.env.local
