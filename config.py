@@ -15,7 +15,7 @@ DB_CONFIG = {
 # --- Aplikasi ---
 APP_TITLE = "Portal Segmentasi Donatur"
 APP_SUBTITLE = "Dompet Ummat Kalimantan Barat"
-APP_ICON = "🎯"
+APP_ICON = ""
 
 # --- RFM Defaults ---
 RFM_SEGMENT_LABELS = {
