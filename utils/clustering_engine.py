@@ -7,7 +7,7 @@ Dilengkapi hyperparameter tuning dan perbandingan 3 metode.
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans, DBSCAN
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import silhouette_score, silhouette_samples, davies_bouldin_score, calinski_harabasz_score
 from sklearn.neighbors import NearestNeighbors
 import warnings
@@ -24,7 +24,7 @@ def prepare_features(df_rfm: pd.DataFrame) -> tuple:
     feature_cols = ["recency", "frequency", "monetary"]
     X = df_rfm[feature_cols].values
     
-    scaler = StandardScaler()
+    scaler = MinMaxScaler()
     X_scaled = scaler.fit_transform(X)
     
     return X_scaled, scaler, feature_cols
